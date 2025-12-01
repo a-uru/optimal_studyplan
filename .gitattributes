@@ -1,0 +1,42 @@
+# ----------------------------------------
+# Cross-platform safe line ending settings
+# Windows / Linux / macOS 全対応
+# ----------------------------------------
+
+# すべてのテキストファイルを LF に統一
+* text eol=lf
+
+# Python
+*.py text
+*.pyw text
+
+# CSV, JSON, YAML, Markdown
+*.csv text
+*.json text
+*.yml text
+*.yaml text
+*.md text
+
+# Git が誤検知しやすいファイル
+*.txt text
+*.ini text
+*.cfg text
+
+# Windows のバッチファイルは CRLF が望ましい
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# バイナリ扱い(改行変換しない)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.mp4 binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.pyc binary   # コンパイル済みPython
+__pycache__/* binary
+
+# Project-specific
+plans/*.csv text
