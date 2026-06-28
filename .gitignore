@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 配布・ビルド
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# テスト・カバレッジ
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# 生成された学習プラン（example.csv はサンプルとして追跡）
+plans/*.csv
+!plans/example.csv
